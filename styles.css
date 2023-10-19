@@ -86,12 +86,12 @@ body {
 #socials {
   position: fixed;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   bottom: 0;
   right: 0;
-  gap: 50px;
+  gap: 25px;
   margin-bottom: 20px;
   margin-right: 20px;
   z-index: 100;
@@ -126,25 +126,73 @@ body {
 */
 
 #about {
+  margin-top: 250px;
   height: fit-content;
   width: fit-content;
 
 }
 
 #img1 {
-  height: 30%;
-  width: 30%;
+  height: 26%;
+  width: 26%;
   user-select: none;
   -webkit-user-drag: none;
-  margin-left: 150px;
+  margin-left: 350px;
 }
 
-h1 {
+h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 64px;
   color: #303030;
   user-select: none;
   margin-left: 150px;
+  font-weight: 200;
+  position: absolute;
+  top: 125%;
+  left: 32%;
+}
+
+.text1, .sunshine{
+  font-size: 28px;
+  line-height: 28px;
+  color: #303030;
+}
+
+.text1 {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 145%;
+  left: 50%;
+  width: 565px;
+  user-select: none;
+}
+
+#line {
+  position: absolute;
+  top: 134%;
+  left: 68%;
+  width: 220px;
+  height: 1px;
+  background-color: #303030;
+}
+
+.sunshine {
+  font-family: "sunshine-Italic";
+  font-style: italic;
+  font-weight: 300;
+}
+
+#studio {
+  position: relative;
+  font-family: "sunshine-Italic";
+  font-style: italic;
+  font-weight: 300;
+  color: #303030;
+  z-index: 10;
+  user-select: none;
+  font-size: clamp(16px, 10vw, 128px);
+  white-space: nowrap;
+  font-size: 64px;
 }
 
 #sidecontainer {
@@ -152,11 +200,11 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   width: fit-content;
   gap: 150px;
   margin-left: -25px;
-  top: 50%;
+  top: 30%;
 }
 
 .sideelement {
