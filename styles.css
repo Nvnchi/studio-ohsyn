@@ -21,10 +21,14 @@ body {
   backdrop-filter: blur(3px) brightness(100%);
   background-color: #e0d8d808;
   border-radius: 132.5px;
-  height: 150%;
+  height: 60%;
   position: absolute;
   width: 35%;
   z-index: 20;
+}
+
+#section {
+  height: 100vh;
 }
 
 #intro {
@@ -124,14 +128,23 @@ body {
 #about {
   height: fit-content;
   width: fit-content;
-  margin-top: 1500px;
+
 }
 
 #img1 {
-  height: 20%;
-  width: 20%;
+  height: 30%;
+  width: 30%;
   user-select: none;
   -webkit-user-drag: none;
+  margin-left: 150px;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 64px;
+  color: #303030;
+  user-select: none;
+  margin-left: 150px;
 }
 
 #sidecontainer {
