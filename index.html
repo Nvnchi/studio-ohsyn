@@ -8,7 +8,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>studio ohsyn</title>
-  
+
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <img id="pause" src="pause.svg" alt="pause button">
   </header>
 
-  <section id="section">
+  <section>
     <article id="intro">
       <h1 id="title">studio ohsyn</h1>
       <img id="blob" src="./Vector.webp" alt="blob in gradient">
@@ -30,76 +30,106 @@
 
 
   <aside>
-    <div id="sidecontainer">
+    <div id="sidecontainer" class="reveal sidereveal">
       <div class="sideelement">
-        <a class="link" href=""><img src="hartje_zwart.svg" alt="icon of a heart">about me</a>
+        <a class="link" href="#about"><img src="hartje_zwart.svg" alt="icon of a heart">about me</a>
       </div>
       <div class="sideelement">
-        <a class="link" href=""><img src="planeet_zwart.svg" alt="icon of a planet">projects</a>
+        <a class="link" href="#scroll"><img src="planeet_zwart.svg" alt="icon of a planet">projects</a>
       </div>
       <div class="sideelement">
-        <a class="link" href=""><img src="sterretjes_zwart.svg" alt="icon of stars">contact</a>
+        <a class="link" href="#contact"><img src="sterretjes_zwart.svg" alt="icon of stars">contact</a>
       </div>
     </div>
   </aside>
 
-  <section id="about">
-    <img id="img1" src="Frame-6.webp" alt="picture of myself">
-    <h2>hi, i'm <span id="studio">studio ohsyn</span></h2> <hr id="line">
-    <p class="text1">i'm a <span class="sunshine">full-stack designer</span> based in Belgium with the mission to add the force of aesthetic in every project i embark on. when I'm not turning ideas into stunning visuals, you'll find me lost in the rhythm of music, my endless source of creativity. art, games, and interior design are my kind of playground, fueling the intrigue in my work. my imagination knows no bounds, and now, i'm excited to share it with the world – one project at a time. let's create something extraordinary together! interested in my resume? you can find it <span class="sunshine">here</span> !</p>
+  <section>
+    <article id="about">
+      <img id="img1" src="Frame-6.webp" alt="picture of myself" class="sidereveallocation">
+      <img id="blob" src="./Vector.webp" alt="blob in gradient">
+      <div>
+        <div style="display: flex;flex-direction: row;align-items: center;gap: 50px;position: relative;height: 100px;">
+          <h2>hi, i'm <span id="studio">studio ohsyn</span></h2>
+          <hr id="line">
+        </div>
+
+        <p class="text1">i'm a <span class="sunshine">full-stack designer</span> based in Belgium with the mission to add
+          the force of aesthetic in every project i embark on. when I'm not turning ideas into stunning visuals, you'll find
+          me lost in the rhythm of music, my endless source of creativity. art, games, and interior design are my kind of
+          playground, fueling the intrigue in my work. my imagination knows no bounds, and now, i'm excited to share it with
+          the world – one project at a time. let's create something extraordinary together! interested in my resume? you can
+          find it <span class="sunshine">here</span> !</p>
+      </div>
+    </article>
   </section>
 
   <div id="scroll">
 
-  <section id="besimplified" class="project">
-    <h3>BESimplified</h3>
-    <h4>01</h4>
-    <p>BESimplified, the result of a school project, pushed me to create an app for a specific audience. it was an eye-opener in terms of research and problem-solving. i couldn't choose my audience, so i had to adapt everything to match their needs. it was a valuable experience that taught me a lot about design and client work. looking back, it was a lot of fun, and i learned a great deal.</p>
-    <button>branding</button>
-    <button>website</button>
-    <button>app</button>
-    <button>visuals</button>
-    <button>styleguide</button>
-  </section>
+    <section id="besimplified" class="project">
+      <h3>BESimplified</h3>
+      <h4>01</h4>
+      <p>BESimplified, the result of a school project, pushed me to create an app for a specific audience. it was an
+        eye-opener in terms of research and problem-solving. i couldn't choose my audience, so i had to adapt everything
+        to match their needs. it was a valuable experience that taught me a lot about design and client work. looking
+        back, it was a lot of fun, and i learned a great deal.</p>
+      <button>branding</button>
+      <button>website</button>
+      <button>app</button>
+      <button>visuals</button>
+      <button>styleguide</button>
+    </section>
 
-  <section id="virtunes" class="project">
-    <h3>Virtunes</h3>
-    <h4>02</h4>
-    <p>my most significant project to date is Virtunes, another school project with more creative freedom. we had the liberty to choose our target group, which allowed me to spread my wings. it was a challenging experience in collaboration as i faced some issues with my teammate, but i remained committed to making it work.</p>
-    <p>Virtunes was all about combining my love for music and design. it aimed to be a digital platform for virtual concerts, a concept close to my heart. though i couldn't fully realize it, i'm proud of what I achieved.</p>
-    <button>branding</button>
-    <button>website</button>
-    <button>visuals</button>
-    <button>styleguide</button>
-  </section>
+    <section id="virtunes" class="project">
+      <h3>Virtunes</h3>
+      <h4>02</h4>
+      <p>my most significant project to date is Virtunes, another school project with more creative freedom. we had the
+        liberty to choose our target group, which allowed me to spread my wings. it was a challenging experience in
+        collaboration as i faced some issues with my teammate, but i remained committed to making it work.</p>
+      <p>Virtunes was all about combining my love for music and design. it aimed to be a digital platform for virtual
+        concerts, a concept close to my heart. though i couldn't fully realize it, i'm proud of what I achieved.</p>
+      <button>branding</button>
+      <button>website</button>
+      <button>visuals</button>
+      <button>styleguide</button>
+    </section>
 
-  <section id="way2art" class="project">
-    <h3>way 2 art</h3>
-    <h4>03</h4>
-    <p>way 2 art was a project focused on open-air museums, inspired by my visit to the Middelheim Museum in Antwerp. it struck me that new visitors could easily get lost and thus not see all the sculptures, so i proposed a solution – AR glasses that guide you through the museum. while we didn't need to fully develop it, we had to conceptualize how it would function and what it might look like.</p>
-    <button>branding</button>
-    <button>app</button>
-    <button>visuals</button>
-    <button>styleguide</button>
-  </section>
+    <section id="way2art" class="project">
+      <h3>way 2 art</h3>
+      <h4>03</h4>
+      <p>way 2 art was a project focused on open-air museums, inspired by my visit to the Middelheim Museum in Antwerp.
+        it struck me that new visitors could easily get lost and thus not see all the sculptures, so i proposed a
+        solution – AR glasses that guide you through the museum. while we didn't need to fully develop it, we had to
+        conceptualize how it would function and what it might look like.</p>
+      <button>branding</button>
+      <button>app</button>
+      <button>visuals</button>
+      <button>styleguide</button>
+    </section>
 
-  <section id="ugc" class="project">
-    <h3>UGC rebranding</h3>
-    <h4>04</h4>
-    <p>one of my keen interests lies in platform usability. we were entrusted with the task of improving the UGC app, focusing on functionality rather than branding. this project was quite a significant undertaking, but i found it incredibly enjoyable. i've always had a deep fascination with films, and when a project aligns with my passions, you can count on my full dedication.</p>
-    <button>app</button>
-  </section>
+    <section id="ugc" class="project">
+      <h3>UGC rebranding</h3>
+      <h4>04</h4>
+      <p>one of my keen interests lies in platform usability. we were entrusted with the task of improving the UGC app,
+        focusing on functionality rather than branding. this project was quite a significant undertaking, but i found it
+        incredibly enjoyable. i've always had a deep fascination with films, and when a project aligns with my passions,
+        you can count on my full dedication.</p>
+      <button>app</button>
+    </section>
 
   </div>
 
   <section>
     <h2 id="contact">let's work <span id="sunshine">together</span></h2>
-    <p>From small talk to creating opportunities &#45; let's get the conversation rolling! Small talk is like the springboard to exciting discussions and unexpected adventures. Whether we're diving into intriguing facts, your latest creative ventures, or shared hobbies, these light-hearted exchanges often lead to exciting  opportunities. So, feel free to start the conversation, and let's see where it takes us!</p>
+    <p>From small talk to creating opportunities &#45; let's get the conversation rolling! Small talk is like the
+      springboard to exciting discussions and unexpected adventures. Whether we're diving into intriguing facts, your
+      latest creative ventures, or shared hobbies, these light-hearted exchanges often lead to exciting opportunities.
+      So, feel free to start the conversation, and let's see where it takes us!</p>
   </section>
 
   <footer id="socials">
     <div class="social">
-      <a href="https://open.spotify.com/user/21whqkm5wc67ixhq7vypyyx3i?si=9c676ac3fa484f35"><img src="./spotify.svg" alt="spotify icon"></a>
+      <a href="https://open.spotify.com/user/21whqkm5wc67ixhq7vypyyx3i?si=9c676ac3fa484f35"><img src="./spotify.svg"
+          alt="spotify icon"></a>
     </div>
     <div class="social">
       <a href="https://dribbble.com/sdvlx"><img src="./dribbble.svg" alt="dribbble icon"></a>
@@ -108,7 +138,8 @@
       <a href=""><img src="./behance.svg" alt="behance icon"></a>
     </div>
     <div class="social">
-      <a href="https://www.linkedin.com/in/sidney-devogelaere-b05014294/"><img src="./linkedin.svg" alt="linkedin icon"></a>
+      <a href="https://www.linkedin.com/in/sidney-devogelaere-b05014294/"><img src="./linkedin.svg"
+          alt="linkedin icon"></a>
     </div>
     <div class="social">
       <a href="https://github.com/Nvnchi"><img src="./github.svg" alt="github icon"></a>
@@ -117,4 +148,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
