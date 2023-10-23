@@ -17,6 +17,7 @@ body {
   /*background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 376 376' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.04' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); */
   background-image: url(./foto.png);
   overflow-x: hidden;
+  cursor: url('cursor.svg'), auto;
 }
 
 #pause {
@@ -71,12 +72,19 @@ article {
   white-space: nowrap;
 }
 
-#blob {
+#blob, #blob1 {
   position: absolute;
   right: -50%;
   width: 150%;
   user-select: none;
   -webkit-user-drag: none;
+  z-index: -100;
+}
+
+#blob1 {
+  width: 100%;
+  top: -30%;
+  right: -20%;
 }
 
 #ellipse-1 {
@@ -112,6 +120,7 @@ article {
   margin-bottom: 20px;
   margin-right: 20px;
   z-index: 100;
+  cursor: url('cursor.svg'), pointer;
 }
 
 .social {
@@ -119,16 +128,19 @@ article {
   height: 28px;
   display: inline-block;
   -webkit-user-drag: none;
+  cursor: url('cursor.svg'), pointer;
 }
 
 .social2 {
   width: 30px;
   height: 25px;
   display: inline-block;
+  cursor: url('cursor.svg'), pointer;
 }
 
-.social:hover {
+.social:hover, .social2:hover {
   transform: scale(1.1);
+  cursor: url('cursor.svg'), pointer;
 }
 
 /*#side-text1 {
@@ -176,9 +188,9 @@ h2 {
 .text1 {
   z-index: 10;
   font-family: oakes grotesk light;
-  max-width: 565px;
   user-select: none;
   font-size: 24px;
+  width: 620px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -198,9 +210,9 @@ h2 {
 }
 
 #line {
-  left: 460px;
+  left: 440px;
   position: absolute;
-  width: 195px;
+  width: 160px;
   height: 1px;
   background-color: #303030;
 }
@@ -235,6 +247,7 @@ h2 {
   gap: 150px;
   margin-left: -25px;
   top: 30%;
+  z-index: 100;
 }
 
 .sideelement {
@@ -246,6 +259,12 @@ h2 {
   color: #303030;
   font-family: oakes grotesk light;
   font-size: 24px;
+  cursor: url('cursor.svg'), pointer;
+
+}
+
+.link:hover {
+  cursor: url('cursor.svg'), pointer;
 }
 
 .sideelement img {
@@ -260,24 +279,28 @@ h2 {
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
+  cursor: url('cursor.svg'), auto;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background-color: #f5f5f5;
   border-radius: 25px;
+  cursor: url('cursor.svg'), auto;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #303030;
   border-radius: 25px;
+  cursor: url('cursor.svg'), auto;
   
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #303030;
+  cursor: url('cursor.svg'), auto;
 }
 
 .project {
@@ -340,8 +363,6 @@ h2 {
   font-size: 28px;
   font-size: 68px;
 }
-
-
 
 .reveal{
   position: relative;
