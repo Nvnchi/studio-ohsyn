@@ -7,11 +7,30 @@
   <link href="https://db.onlinewebfonts.com/c/335b2db371452cb769449a8174a284f4?family=Sunshine+Smiles+Italic"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="projects.css">
   <title>studio ohsyn</title>
 
 </head>
 
 <body>
+
+  <div class="cursor__ball cursor__ball--small">
+    <svg height="10" width="10">
+      <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+    </svg>
+  </div>
+</div>
+
+
+<div class="cursor">
+  <div class="cursor__ball cursor__ball--big ">
+    <svg height="30" width="30">
+      <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+    </svg>
+  </div>
+</div>
+
+
   <header>
     <img id="pause" src="pause.svg" alt="pause button">
   </header>
@@ -66,9 +85,9 @@
   <div id="scroll">
 
     <section id="besimplified" class="project">
-      <h3>BESimplified</h3>
-      <h4>01</h4>
-      <p>BESimplified, the result of a school project, pushed me to create an app for a specific audience. it was an
+      <h3 class="projecttitle">BESimplified</h3>
+      <h4 class="projectnumber">01</h4>
+      <p class="projecttext">BESimplified, the result of a school project, pushed me to create an app for a specific audience. it was an
         eye-opener in terms of research and problem-solving. i couldn't choose my audience, so i had to adapt everything
         to match their needs. it was a valuable experience that taught me a lot about design and client work. looking
         back, it was a lot of fun, and i learned a great deal.</p>
@@ -118,13 +137,21 @@
 
   </div>
 
-  <section>
+  <section id="contactpage">
+    <article id="contacttext">
     <h2 id="contact">let's work <span id="sunshine">together</span></h2>
-    <p>From small talk to creating opportunities &#45; let's get the conversation rolling! Small talk is like the
+    <hr id="line2">
+    <p id="text3">From small talk to creating <span class="sunshine2">opportunities</span> &#45; let's get the conversation rolling! Small talk is like the
       springboard to exciting discussions and unexpected adventures. Whether we're diving into intriguing facts, your
-      latest creative ventures, or shared hobbies, these light-hearted exchanges often lead to exciting opportunities.
-      So, feel free to start the conversation, and let's see where it takes us!</p>
-  </section>
+      latest creative ventures, or shared hobbies, these light-hearted exchanges often lead to <span class="sunshine2">exciting</span> opportunities.
+      So, feel free to start the <span class="sunshine2">conversation</span>, and let's see where it takes us!</p>
+      <img src="./Vector.webp" id="blob2" alt="blob in gradient">
+    </article>
+    <article id="contactinfo">
+      <img class="icon" src="./wereldje.svg" alt="icon of the world"><a href="#">meow@studio-ohsyn.be</a>
+      <p><img class="icon" src="./wolkje.svg" alt="icon of the world">+32 499 28 85 52</p>
+    </article>
+    </section>
 
   <footer id="socials">
     <div class="social">

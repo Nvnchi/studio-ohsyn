@@ -20,6 +20,35 @@ body {
   cursor: url('cursor.svg'), auto;
 }
 
+.cursor {
+  pointer-events: none;
+  
+  &__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+    
+    circle {
+      fill: #f7f8fa;
+    }
+  }      
+} 
+
+.left, .right {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  background: #fff;
+}
+
 #pause {
   top: 0;
   right: 0;
@@ -72,7 +101,7 @@ article {
   white-space: nowrap;
 }
 
-#blob, #blob1 {
+#blob, #blob1, #blob2 {
   position: absolute;
   right: -50%;
   width: 150%;
@@ -85,6 +114,12 @@ article {
   width: 100%;
   top: -30%;
   right: -20%;
+}
+
+#blob2 {
+  width: 120%;
+  top: -60%;
+  right: 0%;
 }
 
 #ellipse-1 {
@@ -119,7 +154,7 @@ article {
   gap: 25px;
   margin-bottom: 20px;
   margin-right: 20px;
-  z-index: 100;
+  z-index: 1000;
   cursor: url('cursor.svg'), pointer;
 }
 
@@ -350,17 +385,61 @@ h2 {
   width: 100vw;
 }
 
+#contactpage {
+}
+
+#contacttext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -350px;
+  margin-top: -20px;
+}
+
+#contactinfo {
+  z-index: 10;
+  font-family: oakes grotesk light;
+  user-select: none;
+  font-size: 24px;
+  max-width: 800px;
+  margin-left: 500px;
+  margin-top: 35px;
+  
+}
+
+#contactinfo a {
+  text-decoration: none;
+  color: #303030;
+  cursor: url('cursor.svg'), pointer;
+}
+
+.icon {
+  margin-right: 35px;
+  margin-top: 35px;
+}
+
+#line2 {
+  position: absolute;
+  width: 230px;
+  height: 1px;
+  background-color: #303030;
+  margin-top: -160px;
+  margin-left: 520px;
+}
+
 #contact {
   position: relative;
   font-family: oakes grotesk light;
   font-size: 64px;
+  margin-bottom: 0px;
+  margin-left: -50px;
 }
 
 #sunshine {
   font-family: "sunshine-Italic";
   font-style: italic;
   font-weight: 300;
-  font-size: 28px;
   font-size: 68px;
 }
 
@@ -374,4 +453,21 @@ h2 {
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+#text3 {
+  z-index: 10;
+  font-family: oakes grotesk light;
+  user-select: none;
+  font-size: 24px;
+  max-width: 800px;
+  line-height: 30px;
+}
+
+.sunshine2 {
+  font-family: "sunshine-Italic";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
 }
