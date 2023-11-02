@@ -1,23 +1,77 @@
-.projecttitle{
-    font-size: 128px;
-    font-family: "sunshine-Italic";
+.project, .project2 {
+    background-color: #f5ecec75;
+    margin: 100px;
+    display: flex;
+    user-select: none;
+}
+
+.project {
+    flex-direction: row;
+}
+
+.project2 {
+    flex-direction: row-reverse;
+}
+
+.projectimage{
+    width: 62%;
+}
+
+.projectimg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projectdetails {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.projectarrow {
+    margin-left: 15px;
+}
+
+.italic {
     font-style: italic;
     font-weight: 300;
     color: #303030;
 }
 
-.projectnumber{
-    font-size: 350px;
-    font-family: "oakes grotesk light";
-    font-style: italic;
-    font-weight: 300;
-    color: #303030;
+.projectinformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 5%;
 }
 
 .projecttitle{
-    font-size: 128px;
-    font-family: "sunshine-Italic";
+    font-size: 75px;
+    font-family: 'apparel-regularit';
     font-style: italic;
     font-weight: 300;
     color: #303030;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.projectinfo{
+    font-size: 16px;
+    font-family: "oakesgrotesk-light";
+    font-weight: 300;
+    margin-bottom: -0px;
+    line-height: 20px;
+}
+
+.gradient {
+    background: linear-gradient(to right, #F4537A, #50A4F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.red {
+    color: #F4537A;
 }
