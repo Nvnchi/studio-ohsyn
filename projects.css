@@ -72,6 +72,13 @@
     -webkit-text-fill-color: transparent;
 }
 
-.red {
-    color: #F4537A;
+#magicPointer{
+    background-color: #000 !important;
+    z-index: 9999;
 }
+
+ #magicMouseCursor{
+   border: 1px solid #000 !important;
+   z-index: 9999;
+}
+
