@@ -82,3 +82,25 @@
    z-index: 9999;
 }
 
+.pagetitle {
+    position: relative;
+    font-family: 'apparel-regularit';
+    font-style: italic;
+    font-weight: 300;
+    color: #303030;
+    user-select: none;
+    font-size: clamp(16px, 10vw, 128px);
+    text-align: center;
+    margin-top: 150px;
+}
+
+.pagetext {
+    z-index: 10;
+    font-family: "oakesgrotesk-light";
+    user-select: none;
+    font-size: 20px;
+    margin-right: 500px;
+    margin-left: 500px;
+
+}
+
