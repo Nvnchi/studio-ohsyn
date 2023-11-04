@@ -28,3 +28,13 @@
     transition: 0.2s;
     cursor: none;
 }
+
+#way2art, #way2art2 {
+    margin: 0px 150px 0px 150px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#way2art2 {
+    margin-top: 150px;
+}
