@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@fullcalendar/core": "^6.1.7",
+    "@fullcalendar/daygrid": "^6.1.7",
+    "@fullcalendar/list": "^6.1.7",
+    "@fullcalendar/timegrid": "^6.1.7",
+    "flickity": "^3.0.0",
+    "granim": "^2.0.0"
+  }
+}

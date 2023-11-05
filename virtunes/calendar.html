@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/zwartIcon.svg">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'%3E></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    eventClick: function(info) {
+      var eventObj = info.event;
+
+      if (eventObj.url) {
+        alert(
+          'You clicked on ' + eventObj.title + '.\n' +
+          'We will now show you more information about ' + eventObj.title + ' in a new tab.'
+        );
+
+        window.open(eventObj.url);
+
+        info.jsEvent.preventDefault(); // prevents browser from following link in current tab.
+      }
+    },
+    events: [
+    {
+      start: '2023-05-31',
+      end: '2023-05-31',
+      title: 'Ed Sheeran',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/edsheeranpage.html'
+    },
+    {
+      start: '2023-06-01',
+      end: '2023-06-01',
+      title: 'LAUV',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/lauvpage.html'
+    },
+    {
+      start: '2023-06-03',
+      end: '2023-06-03',
+      title: 'PRETTYMUCH',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/prettymuchpage.html'
+    },
+    {
+      start: '2023-06-12',
+      end: '2023-06-12',
+      title: 'Adele',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/adelepage.html'
+    },
+    {
+      start: '2023-06-16',
+      end: '2023-06-16',
+      title: 'JVKE',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/jvkepage.html'
+    },
+    {
+      start: '2023-06-24',
+      end: '2023-06-24',
+      title: 'NewJeans',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/newjeanspage.html'
+    },
+    {
+      start: '2023-06-04',
+      end: '2023-06-04',
+      title: 'Ashnikko',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/ashnikkopage.html'
+    },
+    {
+      start: '2023-06-28',
+      end: '2023-06-28',
+      title: 'BTS',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/btspage.html'
+    },
+    {
+      start: '2023-06-06',
+      end: '2023-06-06',
+      title: 'Ice Spice',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/icespicepage.html'
+    },
+    {
+      start: '2023-06-15',
+      end: '2023-06-15',
+      title: 'Lewis Capaldi',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/lewiscapaldipage.html'
+    },
+    {
+      start: '2023-06-27',
+      end: '2023-06-27',
+      title: 'Labrinth',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/labrinthpage.html'
+    },
+    {
+      start: '2023-06-30',
+      end: '2023-06-30',
+      title: 'Anne-Marie',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/annemariepage.html'
+    },
+    {
+      start: '2023-07-30',
+      end: '2023-07-02',
+      title: 'Ariana Grande',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/arianagrandepage.html'
+    },
+    {
+      start: '2023-07-01',
+      end: '2023-07-01',
+      title: 'Beyonce',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/beyoncepage.html'
+    },
+    {
+      start: '2023-07-04',
+      end: '2023-07-04',
+      title: 'Billie Eilish',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/billieeilishpage.html'
+    },
+    {
+      start: '2023-07-10',
+      end: '2023-07-10',
+      title: 'Bryan Adams',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/bryanadamspage.html'
+    },
+    {
+      start: '2023-07-12',
+      end: '2023-07-12',
+      title: 'Calvin Harris',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/calvinharrispage.html'
+    },
+    {
+      start: '2023-07-15',
+      end: '2023-07-15',
+      title: 'Charlie Puth',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/charlieputhpage.html'
+    },
+    {
+      start: '2023-07-17',
+      end: '2023-07-17',
+      title: 'Disclosure',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/disclosurepage.html'
+    },
+    {
+      start: '2023-07-19',
+      end: '2023-07-19',
+      title: 'Doja Cat',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/dojacatpage.html'
+    },
+    {
+      start: '2023-07-21',
+      end: '2023-07-21',
+      title: 'Dove Cameron',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/dovecameronpage.html'
+    },
+    {
+      start: '2023-07-25',
+      end: '2023-07-25',
+      title: 'Dua Lipa',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/dualipapage.html'
+    },
+    {
+      start: '2023-07-28',
+      end: '2023-07-28',
+      title: 'Ellie Goulding',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/elliegouldingpage.html'
+    },
+    {
+      start: '2023-08-03',
+      end: '2023-08-03',
+      title: 'Flume',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/flumepage.html'
+    },
+    {
+      start: '2023-08-07',
+      end: '2023-08-07',
+      title: 'Halsey',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/halseypage.html'
+    },
+    {
+      start: '2023-08-10',
+      end: '2023-08-10',
+      title: 'Harry Styles',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/harrystylespage.html'
+    },
+    {
+      start: '2023-08-14',
+      end: '2023-08-14',
+      title: 'Imagine Dragons',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/imaginedragonspage.html'
+    },
+    {
+      start: '2023-08-17',
+      end: '2023-08-17',
+      title: 'Jackson Wang',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/jacksonwangpage.html'
+    },
+    {
+      start: '2023-08-21',
+      end: '2023-08-21',
+      title: 'Joji',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/jojipage.html'
+    },
+    {
+      start: '2023-08-24',
+      end: '2023-08-24',
+      title: 'Jonas Brothers',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/jonasbrotherspage.html'
+    },
+    {
+      start: '2023-08-28',
+      end: '2023-08-28',
+      title: 'KAYTRANADA',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/kaytranadapage.html'
+    },
+    {
+      start: '2023-09-03',
+      end: '2023-09-03',
+      title: 'Keiynan Lonsdale',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/keiynanlonsdalepage.html'
+    },
+    {
+      start: '2023-09-07',
+      end: '2023-09-07',
+      title: 'Lil Nas X',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/lilnasxpage.html'
+    },
+  {
+      start: '2023-09-11',
+      end: '2023-09-11',
+      title: 'Lizzo',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/lizzopage.html'
+    },
+    {
+      start: '2023-09-15',
+      end: '2023-09-15',
+      title: 'Lost Frequencies',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/lostfrequenciespage.html'
+    },
+    {
+      start: '2023-09-19',
+      end: '2023-09-19',
+      title: 'Madison Beer',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/madisonbeerpage.html'
+    },
+    {
+      start: '2023-09-23',
+      end: '2023-09-23',
+      title: 'Megan Thee Stallion',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/mtspage.html'
+    },
+    {
+      start: '2023-09-26',
+      end: '2023-09-26',
+      title: 'Machine Gun Kelly',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/mgkpage.html'
+    },
+    {
+      start: '2023-09-30',
+      end: '2023-09-30',
+      title: 'NF',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/nfpage.html'
+    },
+    {
+      start: '2023-10-05',
+      end: '2023-10-05',
+      title: 'Pitbull',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/pitbullpage.html'
+    },
+    {
+      start: '2023-10-09',
+      end: '2023-10-09',
+      title: 'Post Malone',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/postmalonepage.html'
+    },
+    {
+      start: '2023-10-12',
+      end: '2023-10-12',
+      title: 'Rihanna',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/rihannapage.html'
+    },
+    {
+      start: '2023-10-16',
+      end: '2023-10-16',
+      title: 'Sam Smith',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/samsmithpage.html'
+    },
+    {
+      start: '2023-10-19',
+      end: '2023-10-19',
+      title: 'Selena Gomez',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/selenagomezpage.html'
+    },
+    {
+      start: '2023-10-23',
+      end: '2023-10-23',
+      title: 'Shawn Mendes',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/shawnmendespage.html'
+    },
+    {
+      start: '2023-10-27',
+      end: '2023-10-27',
+      title: 'Stray Kids',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/straykidspage.html'
+    },
+    {
+      start: '2023-10-30',
+      end: '2023-10-30',
+      title: 'The Weeknd',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/theweekndpage.html'
+    },
+    {
+      start: '2023-11-05',
+      end: '2023-11-05',
+      title: 'The Kid LAROI',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/thekidlaroipage.html'
+    },
+    {
+      start: '2023-11-09',
+      end: '2023-11-09',
+      title: 'SZA',
+      display: 'background',
+      url: 'https://nvnchi.github.io/Virtunes/artistspages/szapage.html'
+    },
+    ]
+  });
+
+  calendar.render();
+});
+      </script>
+    <title>Calendar</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div id="logo"><a href="index.html"><img src="./images/witLogo.svg" alt="Logo Virtunes wit"></a></div>
+            <div>
+            <a class="nav-links" href="profile.html">profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <div id='calendar'></div>
+
+</body>
+</html>

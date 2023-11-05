@@ -34,6 +34,16 @@
     margin-left: 15px;
 }
 
+.projectinfo.linkie2:hover + .projectarrow {
+    transform: translateX(5px);
+    transition: 0.2s;
+}
+
+.projectarrow:not(:hover) {
+    transition: 0.2s;
+}
+
+
 .italic {
     font-style: italic;
     font-weight: 300;
@@ -73,12 +83,12 @@
 }
 
 #magicPointer{
-    background-color: #000 !important;
+    background-color: #303030 !important;
     z-index: 9999;
 }
 
  #magicMouseCursor{
-   border: 1px solid #000 !important;
+   border: 1px solid #303030 !important;
    z-index: 9999;
 }
 
@@ -151,4 +161,8 @@
 
 .button:not(:hover) {
     transition: 0.2s;
+}
+
+.aboutbutton {
+    margin-left: 75px;
 }

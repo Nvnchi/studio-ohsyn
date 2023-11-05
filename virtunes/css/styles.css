@@ -1,0 +1,736 @@
+@import url('satoshi.css');
+@import url('alpino.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #242324;
+    background-image: url(../images/Rectangle.svg);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Satoshi', sans-serif;
+    color: white;
+    margin-bottom: 0px;
+}
+
+p, a {
+    font-family: 'Alpino-Regular';
+    color: white;
+}
+
+
+#t {
+    color: #EADC21;
+}
+
+#u {
+    color: #FFB235; 
+}
+
+#n {
+    color: #D71285;  
+}
+
+#e {
+    color: #44CEFA;
+}
+
+#s {
+    color: #63E2CF;
+}
+/******* Navigation *******/
+
+header nav {
+    background-image: url(../images/Rectangle.svg);
+    background-color: #242324;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 99%;
+}
+
+header nav .nav-links {
+    font-family: 'Alpino-Regular';
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+}
+
+header nav #logo {
+    height: 75px;
+    width: 130px;
+    margin-top: 15px;
+}
+
+/******* Homepage *******/
+
+.title {
+    text-align: center;
+    font-size: 96px;
+    margin-top: 250px;
+}
+
+.text {
+    text-align: center;
+    font-size: 40px;
+}
+
+.buttonText {
+    font-size: 24px;
+    margin-top: 175px;
+    text-align: center;
+}
+
+.button {
+    color: white;
+    font-size: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+  .button::before,
+  .button::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  .button::before {
+    background: rgb(234,220,33);
+    background: linear-gradient(90deg, rgba(234,220,33,1) 0%, rgba(255,178,53,1) 25%, rgba(215,18,133,1) 50%, rgba(68,206,250,1) 75%, rgba(99,226,207,1) 100%);
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .button::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .button:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+
+  .button:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+
+/******* Who are we *******/
+
+.subTitle {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 100px;
+}
+
+.subText {
+    text-align: center;
+    font-size: 24px;
+    margin: 50px 200px 0px 200px;
+}
+
+.subsubText {
+    margin: 50px 200px 0px 200px;
+}
+
+#password, #username, #firstname, #lastname, #email, #emailverif {
+    font-family: 'Alpino-Regular';
+    font-size: 16px;
+    background-color: black;
+    border: white 1px solid;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 10px 10px 20px;
+    background-color: transparent;
+}
+
+::placeholder  {
+    font-family: 'Alpino-Regular';
+    border: white;
+    color: white;
+}
+
+.btn {
+    font-family: 'Alpino-Regular';
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100px;
+}
+ 
+.registerAndLogin {
+    margin: 150px auto auto auto;
+    padding: 50px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.registerAndLogin a {
+    text-decoration: none;
+}
+
+.registerAndLogin form label,
+.registerAndLogin form input {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+color: white;
+font-family: 'Alpino-Regular';
+}
+
+#password, #username {
+    background-color: transparent;
+}
+
+.anotherTitle {
+    text-align: center;
+    font-size: 48px;
+}
+
+.registerAndLoginScreen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-row-gap: 0px;
+    
+}
+
+.image {
+    grid-area: 1 / 2 / 2 / 3;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+#picture {
+    height: 35%;
+}
+
+.material-symbols-outlined {
+    color: white;
+    margin-right: 10px;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+#goback {
+    position: absolute;
+    margin-top: 3px;
+}
+
+.blob {
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    width: 791px;
+    height: 775px;
+}
+
+#yellow {
+    top: 10%;
+    right: 55%;
+}
+
+#orange {
+    top: 15%;
+    right: 40%;
+}
+
+#pink {
+    top: 10%;
+    right: 25%;
+}
+
+#blue {
+    top: 20%;
+    right: 10%;
+}
+
+#cyan {
+    top: 10%;
+    right: 0%;
+}
+
+#yellow2 {
+    top: 51%;
+    right: 76%;
+}
+
+#orange2 {
+    top: 10%;
+    right: 60%;
+}
+
+#pink2 {
+    top: -10%;
+    right: 35%;
+}
+
+#blue2 {
+    top: 20%;
+    right: 10%;
+}
+
+#cyan2 {
+    top: -20%;
+    right: -10%;
+}
+
+#yellow3 {
+    top: 11%;
+    right: 76%;
+}
+
+#orange3 {
+    top: 41%;
+    right: 50%;
+}
+
+#pink3 {
+    top: 5%;
+    right: 35%;
+}
+
+#blue3 {
+    top: 40%;
+    right: -5%;
+}
+
+#cyan3 {
+    top: -1%;
+    right: 0%;
+}
+
+.login {
+    overflow: hidden;
+}
+
+.loginbuttons {
+    height: 40px;
+}
+
+.facebook {
+    height: 40px;
+}
+
+.google {
+    height: 45px;
+}
+
+#loginbuttons {
+    margin-top: 50px;
+}
+
+#loginbuttons, #loginbuttons2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+#loginbuttons2 {
+    margin-top: -5px;
+}
+
+#register {
+    margin-top: 10px;
+}
+
+.firstlastname {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-family: 'Alpino-Regular';
+}
+
+#firstlastname {
+    display: flex;
+    gap: 40px;
+}
+
+#firstname {
+    width: 150px;
+}
+
+#lastname {
+    width: 150px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 20%;
+    margin-top: -80px;
+    object-fit: cover;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 10px;
+    
+}
+
+.info {
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    left: 20%;
+    margin-top: 80px;
+
+}
+
+.full-name {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+}
+
+.heading1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0px 0px 10px 0px;
+
+}
+
+.bio {
+    margin: 0px 150px 10px 0px;
+    font-size: 18px;
+}
+
+.genres {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.small-btn {
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: max-content;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    right: 22%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#tickets {
+    position: absolute;
+    left: 20%;
+    margin-top: 300px;
+}
+
+#history {
+    position: absolute;
+    left: 30%;
+    margin-top: 310px;
+}
+
+.ticketImage, .ticketImage2 {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.ticketInfo {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(255,255,255,0) 100%);
+    margin-top: -90px;
+    width: 250px;
+    z-index: 1;
+    position: absolute;
+    margin-bottom: 500px;
+}
+
+.tickets, .tickets2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: normal;
+    position: absolute;
+    z-index: -1;
+    left: 20%;
+    gap: 20px;
+}
+
+.ticketText{
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.ticketImage {
+    margin-top: 370px;
+}
+
+.ticketImage2 {
+    margin-top: 600px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(234,220,33);
+    background: linear-gradient(180deg, rgba(234,220,33,1) 0%, rgba(255,178,53,1) 25%, rgba(215,18,133,1) 50%, rgba(68,206,250,1) 75%, rgba(99,226,207,1) 100%);
+  }
+  
+  #end {
+    position: absolute;
+    margin-top: 1000px;
+    color: transparent;
+  }
+
+  #endend {
+    position: absolute;
+    margin-top: 1090px;
+    color: transparent;
+  }
+
+  #endendend {
+    position: absolute;
+    margin-top: 900px;
+    color: transparent;
+  }
+
+
+ #calendar {
+    margin-top: 100px;
+    width: 90%;
+    height: 90%;
+ }
+
+.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .fc .fc-button-primary:disabled {
+    background-color: transparent;
+    border-color: white;
+    font-family: 'Alpino-Regular';
+ }
+
+ .fc .fc-button-primary {
+    background-color: transparent;
+    border-color: white;
+    font-family: 'Alpino-Regular';
+ }
+
+ .fc .fc-button-primary:hover {
+    background-color: #D71285;
+    border-color: white;
+    font-family: 'Alpino-Regular';
+ }
+
+ .fc-direction-ltr .fc-button-group>.fc-button:not(:last-child) {
+    background-color: transparent;
+    border: white 1px solid;
+ }
+
+ .fc-direction-ltr .fc-button-group>.fc-button:not(:last-child):hover {
+    background-color: #D71285;
+    border: white 1px solid;
+ }
+
+ .fc-direction-ltr .fc-button-group>.fc-button:not(:last-child) {
+    background-color: transparent;
+    border: white 1px solid;
+ }
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: #d7128560;
+}
+
+.fc .fc-bg-event .fc-event-title {
+    font-family: 'Alpino-Regular';
+    color: white;
+}
+
+.fc .fc-bg-event {
+    background-color: #44ccfa6b;
+}
+
+.fc .fc-bg-event {
+    opacity: 1;
+}
+
+.artistbio {
+    font-size: 18px;
+    position: absolute;
+    left: 20%;
+    width: 58%;
+    margin-top: 180px;
+}
+
+.h3, .spotifyProfile {
+    position: absolute;
+    left: 20%;
+}
+
+#concerts {
+    margin-top: 370px;
+}
+
+#spotify {
+    margin-top: 550px;
+}
+
+.spotifyProfile {
+    margin-top: 600px;
+}
+
+.buttonText2 {
+    visibility: hidden;
+}
+
+.concerts {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    margin-top: 420px;
+    gap: 20px;
+}
+
+.concert {
+    display: flex;
+    width: 250px;
+    height: 80px;
+    border: white 1px solid;
+}
+
+.date {
+    width: 100px;
+    height: 80px;
+    background-color: white;
+}
+
+.date p{
+    color: #242324;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 0px;
+}
+
+.infoConcert {
+    width: 250px;
+    height: 80px;
+}
+
+.infoConcert p {
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
+.infoConcert a {
+    margin-left: 10px;
+}
+
+.mostviewed {
+    position: absolute;
+    left: 20%;
+    margin-top: 400px;
+}
+
+.vid {
+    position: absolute;
+    left: 20%;
+    margin-top: 450px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .buttonText {
+        visibility: hidden;
+    }
+
+    .buttonText2 {
+        font-size: 24px;
+        text-align: center;
+        visibility: visible;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .text {
+        font-size: 30px;
+    }
+    
+}
+

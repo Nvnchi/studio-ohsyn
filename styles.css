@@ -286,6 +286,7 @@ h2 {
   user-select: none;
   font-size: 24px;
   width: 620px;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -521,7 +522,7 @@ h2 {
   margin-right: 5px;
 }
 
-.linkie, #contactlink {
+.linkie {
   background:
     linear-gradient(
       to right,
@@ -541,26 +542,11 @@ h2 {
 }
 
 .linkie2 {
-  background:
-    linear-gradient(
-      to right,
-      #f5f5f500,
-      #f5f5f500
-    ),
-    linear-gradient(
-      to  right,
-      #30303079,
-      #30303079
-  );
-  text-decoration: none;
-  background-size: 100% 3px, 0 3px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
   color: #303030;
-  transition: background-size 400ms;
+  text-decoration: none;
 }
 
-.linkie:hover, #contactlink:hover, .linkie2:hover {
+.linkie:hover, .linkie2:hover {
   background-size: 0 3px, 100% 3px;
   cursor: none;
 }
