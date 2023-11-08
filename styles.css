@@ -290,9 +290,19 @@ h2 {
 }
 
 @media screen and (max-width: 1500px) {
+  #contact {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+  }
   #about {
     flex-direction: column-reverse;
     align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(1);
 
     #blob {
       top: 50%;
@@ -309,6 +319,7 @@ h2 {
 
     .text1 {
       margin: auto;
+      margin-bottom: 20px;
     }
   }
   .project .projectimage {
@@ -329,11 +340,61 @@ h2 {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  #about {
+    transform: scale(0.8);
+  }
+
+  body .project {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  body .project2 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #project .projectinformation {
+    width: 100%;
+  }
+
+  #project .projectdetails {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #line, #line2 {
+    display: none;
+  }
+
+  #socials {
+    display: none;
+  }
+  #about {
+    transform: scale(0.5);
+  }
+
+  #contact {
+    transform: scale(0.8);
+  }
+
+  aside {
+    display: none;
+  }
+
+  .projectinformation .projecttitle {
+    font-size: 40px;
+  }
+}
+
+
 #line {
   margin-left: 600px;
   width: 160px;
   height: 1px;
   background-color: #303030;
+  border: 0px;
 }
 
 .sunshine {
@@ -473,6 +534,7 @@ h2 {
   width: 230px;
   height: 1px;
   background-color: #303030;
+  border: 0px;
 }
 
 #contact {
@@ -480,7 +542,6 @@ h2 {
   font-family: "oakesgrotesk-light";
   font-size: 64px;
   margin-bottom: 0px;
-  margin-left: -50px;
 }
 
 #sunshine {
@@ -551,3 +612,71 @@ h2 {
   cursor: none;
 }
 
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Set a background color if needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's on top of other content */
+}
+
+/* Style your SVG within the .page-loader */
+
+.animation{
+  font-family: "oakesgrotesk-light";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  background-color: #303030;
+  color: #f5f5f5;
+  overflow: hidden;
+  justify-content: center;
+  z-index: 10000;
+  width: 100%;
+}
+
+.animate{
+  font-size: 24px;
+  color: #f5f5f5;
+  font-weight: 100;
+}
+
+.spinner {
+	position: relative;
+	top: 35%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
