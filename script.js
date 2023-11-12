@@ -19,7 +19,7 @@ function sidereveal() {
     clear()
     document.getElementById("link-contact").classList.add("gradient")
     document.getElementById("link-contact").classList.add("active")
-    document.getElementById("link-contact").children[0].src = "./images/hartje_gekleurd.svg"; // Change the image source to "hartje_gekleurd" in the if statement
+    document.getElementById("link-contact").children[0].src = "./images/sterretjes_gekleurd.svg"; // Change the image source to "sterretjes_gekleurd" in the if statement
   } else if (elementTop2 < windowHeight - elementVisible) {
     revealstest[0].classList.add("active");
     document.getElementById('top').classList.add("active");
@@ -27,7 +27,7 @@ function sidereveal() {
     clear()
     document.getElementById("link-projects").classList.add("gradient")
     document.getElementById("link-projects").classList.add("active")
-    document.getElementById("link-projects").children[0].src = "./images/hartje_gekleurd.svg"; // Change the image source to "hartje_gekleurd" in the if statement
+    document.getElementById("link-projects").children[0].src = "./images/planeet_gekleurd.svg"; // Change the image source to "planeet_gekleurd" in the if statement
   } else if (elementTop < windowHeight - elementVisible) {
     revealstest[0].classList.add("active");
     document.getElementById('top').classList.add("active");
@@ -52,8 +52,8 @@ function clear() {
   document.getElementById("link-aboutme").classList.remove("gradient")
   document.getElementById("link-aboutme").classList.remove("active")
   document.getElementById("link-aboutme").children[0].src = "./images/hartje_zwart.svg";
-  document.getElementById("link-projects").children[0].src = "./images/hartje_zwart.svg";
-  document.getElementById("link-contact").children[0].src = "./images/hartje_zwart.svg";
+  document.getElementById("link-projects").children[0].src = "./images/planeet_zwart.svg";
+  document.getElementById("link-contact").children[0].src = "./images/sterretjes_zwart.svg";
 }
   
 sidereveal()

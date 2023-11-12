@@ -166,3 +166,71 @@
 .aboutbutton {
     margin-left: 75px;
 }
+
+#button {
+    background-color: transparent;
+    border: none;
+}
+
+#goback {
+    width: 26px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    z-index: 100;
+    position: fixed;
+}
+
+#goback:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    background: linear-gradient(to bottom right, #f4537b8b, #50a3f18b);
+    border-radius: 100%;
+    cursor: none;
+    padding: 5px;
+
+}
+
+#goback:not(:hover) {
+    transition: 0.2s;
+    cursor: none;
+}
+
+.visuals {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.visual {
+    width: 20%;
+    height: 100%;
+}
+
+.visual img {
+    width: 100%;
+    height: 100%;
+}
+
+#ohsyn, #ohsyn2, #ohsyn3, #way2art, #way2art2, #virtunes, #ugc {
+    margin: 0px 150px 0px 150px;
+}
+
+#ohsyn, #ohsyn2, #ohsyn3, #way2art, #way2art2, #virtunes, #ugc, .visual img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+#ohsyn2, #ohsyn3 {
+    margin-top: 150px;
+}
+
+#way2art2 {
+    margin-top: 150px;
+}

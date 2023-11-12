@@ -26,8 +26,6 @@
 
   <div class="animation">
     <div>
-      <div class="spinner"></div>
-      <h1 class="animate">currently loading in</h1>
     </div>
    </div>
 
@@ -195,22 +193,24 @@
 
   <section id="contactpage" class="sidereveallocation3">
     <article id="contact">
-      <div id="contacttext">
-        <div>
-          <h2 id="contact">let's work <span id="sunshine">together</span></h2>
-          <hr id="line2">
+        <div id="contactleft">
+          <div>
+              <h2 id="contact2">let's work <span id="sunshine">together</span></h2>
+          </div>
+          <div>
+              <p id="text3">From small talk to creating <span class="sunshine2">opportunities</span> &#45; let's get the conversation rolling! Small talk is like the
+              springboard to exciting discussions and unexpected adventures. Whether we're diving into intriguing facts, your
+              latest creative ventures, or shared hobbies, these light-hearted exchanges often lead to <span class="sunshine2">exciting</span> opportunities.
+              So, feel free to start the <span class="sunshine2">conversation</span>, and let's see where it takes us!</p>
+          </div>
         </div>
-        <p id="text3">From small talk to creating <span class="sunshine2">opportunities</span> &#45; let's get the conversation rolling! Small talk is like the
-          springboard to exciting discussions and unexpected adventures. Whether we're diving into intriguing facts, your
-          latest creative ventures, or shared hobbies, these light-hearted exchanges often lead to <span class="sunshine2">exciting</span> opportunities.
-          So, feel free to start the <span class="sunshine2">conversation</span>, and let's see where it takes us!</p>
-        <img src="./images/Vector.webp" id="blob2" alt="blob in gradient">
-      </div>
       <div id="contactinfo">
         <img class="icon" src="./images/wereldje.svg" alt="icon of the world"><a href="mailto:studio@ohsyn.com">studio@ohsyn.com</a>
         <p><img class="icon" src="./images/wolkje.svg" alt="icon of the world">+32 499 28 85 52</p>
       </div>
+      <img src="./images/Vector.webp" id="blob2" alt="blob in gradient">
     </article>
+    <hr id="line2">
   </section>
 
   <footer id="socials">
@@ -239,12 +239,12 @@
   <script>
           const timeline = gsap.timeline();
       timeline.to(".animate",{
-          delay: 1,
+          delay: 0.1,
           duration: .5,
           opacity: 0
       });
       timeline.to(".animation",{
-          delay: 0.5,
+          delay: 0.1,
           duration: 1,
           y: "100%",
           ease: "power4.out"
@@ -253,7 +253,7 @@
           zIndex: -1
       });
       timeline.from(".container h1",{
-          delay: .25,
+          delay: .05,
           duration: .8,
           skewY: 10,
           y: 100,
