@@ -52,7 +52,7 @@ body {
   cursor: none;
 }
 
-a {
+a, button {
   cursor: none !important;
 }
 
@@ -70,7 +70,7 @@ article {
 
 /* intro */
 
-#pause {
+#pause, #play, #playButton {
   top: 0;
   right: 0;
   gap: 50px;
@@ -78,6 +78,8 @@ article {
   margin-right: 20px;
   z-index: 100;
   position: fixed;
+  background-color: transparent;
+  border: none;
 }
 
 .ellipse {
