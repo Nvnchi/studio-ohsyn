@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W39T9W42');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="the sanctuary of studio ohsyn - a full-stack designer based in Belgium, dedicated to infusing power of beauty into every project.">
+  <meta name="keywords" content="ui, ux, ui/ux, ux/ui, user research, user experience, user interface, branding, brand identity, designer, portfolio, web design, creativity, aesthetic, website, app, visuals, styleguide, usability, logo">
+  <meta name="author" content="Sidney Devogelaere">
+  <meta property="og:url" content="ohsyn.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="studio ohsyn">
+  <meta property="og:description" content="the sanctuary of studio ohsyn - a full-stack designer based in Belgium, dedicated to infusing power of beauty into every project.">
+  <meta property="og:image" content="./images/socialsbanner.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/favicon.svg">
+  <title>studio ohsyn</title>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W39T9W42"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="animation">
+    <div>
+    </div>
+   </div>
+
+  <header>
+    <img id="pause" src="./images/pause.svg" alt="pause button">
+  </header>
+
+  <main id="mainerror">
+    <div id="error">
+        <div><h1 id="errortitle">oops, you've discovered a <span id="sunshine">design flaw</span> !</h1></div>
+        <div><p class="text3">don&#39;t worry, i&#39;m here to fix! perhaps you got lost in a <span class="sunshine2">creative vortex</span>  or my <span class="sunshine2">pixels</span> have taken on a life of their own. either way, let&#39;s go back to the home page!</p></div>
+        <div><button class="button" onclick="location.href='index.html'">back to the sanctuary of studio ohsyn</button></div>
+    </div>  
+  </main>
+  <img id="blob4" src="./images/Vector.webp" alt="blob in gradient">
+  <aside>
+    <div id="sidecontainer" class="reveal sidereveal">
+      <div class="sideelement">
+        <a class="link" id="link-aboutme" href="#aboutme"><img src="./images/hartje_zwart.svg" alt="icon of a heart">about me</a>
+      </div>
+      <div class="sideelement">
+        <a class="link" id="link-projects" href="#project"><img src="./images/planeet_zwart.svg" alt="icon of a planet">projects</a>
+      </div>
+      <div class="sideelement">
+        <a class="link" id="link-contact" href="#contact"><img src="./images/sterretjes_zwart.svg" alt="icon of stars">contact</a>
+      </div>
+    </div>
+    <div>
+      <a id="top" href="#studioohsyn">back to top <img src="./images/top.svg" alt="icon with arrow to go back to top"></a>
+    </div>
+  </aside>
+
+  <footer id="socials">
+    <div class="social1">
+      <a target="_blank" href="https://open.spotify.com/user/21whqkm5wc67ixhq7vypyyx3i?si=9c676ac3fa484f35"><img src="./images/spotify.svg"
+          alt="spotify icon"></a>
+    </div>
+    <div class="social1">
+      <a target="_blank" href="https://dribbble.com/sdvlx"><img src="./images/dribbble.svg" alt="dribbble icon"></a>
+    </div>
+    <div class="social2">
+      <a target="_blank" href=""><img src="./images/behance.svg" alt="behance icon"></a>
+    </div>
+    <div class="social3">
+      <a target="_blank" href="https://www.linkedin.com/in/sidney-devogelaere-b05014294/"><img src="./images/linkedin.svg"
+          alt="linkedin icon"></a>
+    </div>
+    <div class="social1">
+      <a target="_blank" href="https://github.com/Nvnchi"><img src="./images/github.svg" alt="github icon"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script>
+          const timeline = gsap.timeline();
+      timeline.to(".animate",{
+          delay: 0.1,
+          duration: .5,
+          opacity: 0
+      });
+      timeline.to(".animation",{
+          delay: 0.1,
+          duration: 1,
+          y: "100%",
+          ease: "power4.out"
+      });
+      timeline.to(".animation",{
+          zIndex: -1
+      });
+      timeline.from(".container h1",{
+          delay: .05,
+          duration: .8,
+          skewY: 10,
+          y: 100,
+          x: -199,
+          opacity: 0
+      });
+  </script>
+  <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
+  <script>
+    options = {
+      "outerStyle": "circle-basic",
+      "hoverEffect": "circle",
+      "hoverItemMove": false,
+      "defaultCursor": false,
+      "outerWidth": 41,
+      "outerHeight": 41
+    }
+    magicMouse(options);            
+  </script>
+</body>
+</html>

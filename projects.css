@@ -150,6 +150,7 @@
     border: 1px solid #303030;
     padding: 10px 15px 10px 15px;
     border-radius: 50px;
+    background-color: transparent;
 }
 
 .button:hover {
@@ -184,7 +185,7 @@
 }
 
 #goback:hover {
-    transform: scale(1.1);
+    transform: scale(1.9);
     transition: 0.2s;
     background: linear-gradient(to bottom right, #f4537b8b, #50a3f18b);
     border-radius: 100%;
@@ -216,11 +217,19 @@
     height: 100%;
 }
 
-#ohsyn, #ohsyn2, #ohsyn3, #way2art, #way2art2, #virtunes, #ugc {
+.visuals2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.visual2 {
     margin: 0px 150px 0px 150px;
 }
 
-#ohsyn, #ohsyn2, #ohsyn3, #way2art, #way2art2, #virtunes, #ugc, .visual img {
+.visual img, .visual2 {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;

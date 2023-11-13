@@ -1,3 +1,5 @@
+/* fonts */
+
 @font-face {
   font-family: 'apparel-regularit';
   src: url('./fonts/apparel-regularit-webfont.woff2') format('woff2'),
@@ -14,8 +16,30 @@
   font-style: normal;
 }
 
+/* css reset + basic stuff */
+
 html {
+  box-sizing: border-box;
+  font-size: 16px;
   scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -31,6 +55,20 @@ body {
 a {
   cursor: none !important;
 }
+
+section {
+  height: 100vh;
+  position: relative;
+}
+
+article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* intro */
 
 #pause {
   top: 0;
@@ -51,18 +89,6 @@ a {
   position: absolute;
   width: 35%;
   z-index: 20;
-}
-
-section {
-  height: 100vh;
-  position: relative;
-}
-
-article {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #intro {
@@ -151,7 +177,6 @@ article {
   }
 }
 
-
 @keyframes bounceY {
   0% {
     transform: translateY(0);
@@ -164,17 +189,7 @@ article {
   }
 }
 
-#side-text1,
-#side-text2 {
-  font-family: "oakesgrotesk-light";
-  font-size: 36px;
-  font-weight: 400;
-  color: #303030;
-  user-select: none;
-  transform: rotate(-90deg);
-  /*position: absolute;*/
-  display: none;
-}
+/* footer */
 
 #socials {
   position: fixed;
@@ -242,6 +257,8 @@ article {
   height: 30px;
 }
 
+/* about me */
+
 #aboutme-title {
   display: flex;
   left: -120px;
@@ -257,8 +274,6 @@ article {
   flex-direction: row;
   gap: 50px;
 }
-
-
 
 #img1 {
   height: 500px;
@@ -288,106 +303,6 @@ h2 {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1500px) {
-  #contact {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: scale(1);
-  }
-  #about {
-    flex-direction: column-reverse;
-    align-items: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: scale(1);
-
-    #blob {
-      top: 50%;
-    }
-
-    #img1 {
-      height: inherit;
-      width: 400px;
-    }
-
-    #aboutme-title {
-      left: inherit;
-    }
-
-    .text1 {
-      margin: auto;
-      margin-bottom: 20px;
-    }
-  }
-  .project .projectimage {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  .project2 .projectimage {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-
-  .projectinformation {
-    justify-content: inherit;
-    margin: auto;
-    z-index: 10000;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #about {
-    transform: scale(0.8);
-  }
-
-  body .project {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  body .project2 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  #project .projectinformation {
-    width: 100%;
-  }
-
-  #project .projectdetails {
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #line, #line2 {
-    display: none;
-  }
-
-  #socials {
-    display: none;
-  }
-  #about {
-    transform: scale(0.5);
-  }
-
-  #contact {
-    transform: scale(0.8);
-  }
-
-  aside {
-    display: none;
-  }
-
-  .projectinformation .projecttitle {
-    font-size: 40px;
-  }
-}
-
-
 #line {
   margin-left: 600px;
   width: 160px;
@@ -395,15 +310,6 @@ h2 {
   background-color: #303030;
   border: 0px;
   margin-top: 25px
-}
-
-#line2 {
-  margin-left: 880px;
-  width: 200px;
-  height: 1px;
-  background-color: #303030;
-  border: 0px;
-  margin-top: 95px
 }
 
 .sunshine {
@@ -426,6 +332,8 @@ h2 {
   white-space: nowrap;
   font-size: 68px;
 }
+
+/* sidebar */
 
 #sidecontainer {
   display: flex;
@@ -509,6 +417,43 @@ h2 {
   display: none;
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.active::after{
+  width: 0%;
+  height: 2px;
+  display: block;
+  background: linear-gradient(to bottom right, #f4537b8b, #50a3f18b);
+  content: " ";
+  position: absolute;
+  top: 34px;
+  left: 50%;
+  transition: left 1s cubic-bezier(0.215, 0.61, 0.355, 1), width 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.active:hover::after {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: linear-gradient(to right, #f4537b, #50a3f1);
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: 0;
+}
+
+/* scrollbar */
+
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -532,6 +477,8 @@ h2 {
   background: #303030;
 
 }
+
+/* contact page */
 
 #contactpage {
   padding-top: 250px;
@@ -590,42 +537,7 @@ h2 {
   font-size: 68px;
 }
 
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2s all ease;
-}
-
-.active{
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.active::after{
-  width: 0%;
-  height: 2px;
-  display: block;
-  background: linear-gradient(to bottom right, #f4537b8b, #50a3f18b);
-  content: " ";
-  position: absolute;
-  top: 34px;
-  left: 50%;
-  transition: left 1s cubic-bezier(0.215, 0.61, 0.355, 1), width 1s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.active:hover::after {
-  width: 100%;
-  height: 2px;
-  display: block;
-  background: linear-gradient(to right, #f4537b, #50a3f1);
-  content: "";
-  position: absolute;
-  top: 34px;
-  left: 0;
-}
-
-#text3 {
+.text3 {
   z-index: 10;
   font-family: "oakesgrotesk-light";
   user-select: none;
@@ -633,6 +545,7 @@ h2 {
   max-width: 800px;
   line-height: 30px;
   color: #303030;
+  margin-bottom: 50px;
 }
 
 .sunshine2 {
@@ -674,40 +587,171 @@ h2 {
   cursor: none;
 }
 
-.page-loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff; /* Set a background color if needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999; /* Ensure it's on top of other content */
-}
-
-/* Style your SVG within the .page-loader */
+/* page loader */
 
 .animation{
-  font-family: "oakesgrotesk-light";
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
   background-color: #F5ECEC;
-  background-image: url(./images/foto.png);
   overflow: hidden;
-  justify-content: center;
   z-index: 10000;
   width: 100%;
 }
 
-.animate{
-  font-size: 24px;
-  color: #F5ECEC;
-  font-weight: 100;
+/* 404 */
+
+#errortitle {
+  font-family: "oakesgrotesk-light";
+  font-size: 60px;
+  color: #303030;
+  margin-bottom: 0px;
+}
+
+#error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+}
+
+#mainerror {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#blob4 {
+  position: absolute;
+  width: 800px;
+  top: 10%;
+  left: 20%;
+  z-index: -100;
+}
+
+/* mobile */
+
+@media screen and (max-width: 1500px) {
+  #contact {
+    gap: 200px;
+  }
+  #about {
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+  }
+
+  .aboutbutton {
+    margin-left: 185px !important;
+  }
+
+    #blob1 {
+      top: 0%;
+      right: 5%;
+    }
+
+    #img1 {
+      height: inherit;
+      width: 400px;
+    }
+
+    #aboutme-title {
+      left: inherit;
+    }
+
+    .text1 {
+      margin: auto;
+      margin-bottom: 35px;
+      font-size: 20px;
+    }
+  .project .projectimage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .project2 .projectimage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .projectinformation {
+    justify-content: inherit;
+    margin: auto;
+    z-index: 10000;
+  }
+
+  .text3 {
+    font-size: 20px;
+    max-width: 650px;
+  }
+
+  #contact {
+    font-size: 20px;
+  }
+
+  .sunshine2 {
+    font-size: 26px;
+  }
+
+  #contactinfo {
+    font-size: 20px;
+}
+  .icon {
+    transform: scale(0.9);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #about {
+    transform: scale(0.8);
+  }
+
+  body .project {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  body .project2 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #project .projectinformation {
+    width: 100%;
+  }
+
+  #project .projectdetails {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #line {
+    display: none;
+  }
+
+  #socials {
+    transform: scale(0.9);
+  }
+  #about {
+    transform: scale(0.5);
+  }
+
+  #contact {
+    transform: scale(0.8);
+  }
+
+  aside {
+    display: none;
+  }
+
+  .projectinformation .projecttitle {
+    font-size: 40px;
+  }
 }

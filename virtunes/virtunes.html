@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W39T9W42');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="the sanctuary of studio ohsyn - a full-stack designer based in Belgium, dedicated to infusing power of beauty into every project.">
@@ -22,6 +29,15 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W39T9W42"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+  <div class="animation">
+    <div>
+    </div>
+   </div>
 
   <header>
     <img id="pause" src="../images/pause.svg" alt="pause button">
@@ -37,7 +53,12 @@
     <p class="pagetext">my most significant project to date is Virtunes, another school project with more creative freedom. we had the liberty to choose our target group, which allowed me to spread my wings. it was a challenging experience in collaboration as i faced some issues with my teammate, but i remained committed to making it work.<br><br>
 
       Virtunes was all about combining my love for music and design. it aimed to be a digital platform for virtual concerts, a concept close to my heart. though i couldn't fully realize it, i'm proud of what I achieved.</p>
-      <img id="virtunes" src="./virtunes.svg" alt="image of virtunes project">
+      
+      <div class="visuals2">
+      <div class="visual2"><img id="virtunes" src="./virtunes.webp" alt="image of virtunes project"></div>
+      </div>
+
+
      <p class="pagetext2">interested in the proces? take a look down here. a good point to make is that the website is not responsive, since I was short on time back then.</p>
      <div class="links">
       <div><a class="button" target=”_blank” href="index.html">how the landing page would look like</a></div>
@@ -68,34 +89,34 @@
     </div>
   </footer>
 
-  <script src="../script.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script>
-          const timeline = gsap.timeline();
-      timeline.to(".animate",{
-          delay: 1,
-          duration: .5,
-          opacity: 0
-      });
-      timeline.to(".animation",{
-          delay: 0.5,
-          duration: 1,
-          y: "100%",
-          ease: "power4.out"
-      });
-      timeline.to(".animation",{
-          zIndex: -1
-      });
-      timeline.from(".container h1",{
-          delay: .25,
-          duration: .8,
-          skewY: 10,
-          y: 100,
-          x: -199,
-          opacity: 0
-      });
-  </script>
+    const timeline = gsap.timeline();
+timeline.to(".animate",{
+    delay: 0.1,
+    duration: .5,
+    opacity: 0
+});
+timeline.to(".animation",{
+    delay: 0.1,
+    duration: 1,
+    y: "100%",
+    ease: "power4.out"
+});
+timeline.to(".animation",{
+    zIndex: -1
+});
+timeline.from(".container h1",{
+    delay: .05,
+    duration: .8,
+    skewY: 10,
+    y: 100,
+    x: -199,
+    opacity: 0
+});
+</script>
   <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
   <script>
     options = {

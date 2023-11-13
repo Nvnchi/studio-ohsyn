@@ -26,6 +26,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^/.]+)$ way2art/$1.html [NC,L]
 
-Redirect 301 
 
 
