@@ -111,7 +111,7 @@
     user-select: none;
     margin-right: 200px;
     margin-left: 200px;
-    font-size: clamp(18px, 1vw, 128px);
+    font-size: clamp(16px, 1vw, 128px);
     margin-bottom: 50px;
     text-align: center;
 }
@@ -135,17 +135,20 @@
 
 .links {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 50px;
     margin-bottom: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .button {
     color:#303030;
     font-family: "oakesgrotesk-light";
-    font-size: 18px;
+    font-size: clamp(16px, 1vw, 128px);
     text-decoration: none;
     border: 1px solid #303030;
     padding: 10px 15px 10px 15px;
@@ -156,7 +159,7 @@
 .button:hover {
     background: #303030;
     color: #f5ecec;
-    font-size: 20px;
+    font-size: 18px;
     transition: 0.2s;
 }
 
@@ -243,3 +246,18 @@
 #way2art2 {
     margin-top: 150px;
 }
+
+@media screen and (max-width: 1500px) {
+    .visuals2 {
+        gap: 0px;
+    }
+
+    #way2art2, #ohsyn2, #ohsyn3 {
+        margin-top: 35px;
+    }
+
+    .pagetext, .pagetext2 {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+  }
