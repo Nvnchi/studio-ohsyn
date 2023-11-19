@@ -40,13 +40,6 @@
     </div>
    </div>
 
-  <header>
-    <button id="playButton">
-    <img id="pause" src="./images/pause.svg" alt="pause button">
-    </button>
-    <audio id="audioPlayer" src="lofi.mp3"></audio>
-  </header>
-
   <section id="studioohsyn">
     <article id="intro">
       <h1 id="title">studio ohsyn</h1>
@@ -84,10 +77,10 @@
         </div>
 
         <p class="text1">i'm a <span class="sunshine">full-stack designer</span> based in Belgium with the mission to add
-          the force of aesthetic in every project i embark on. when I'm not turning ideas into stunning visuals, you'll find
-          me lost in the rhythm of music, my endless source of creativity. art, games, and interior design are my kind of
-          playground, fueling the intrigue in my work. my imagination knows no bounds, and now, i'm excited to share it with
-          the world &#8212; one project at a time. let's create something extraordinary together!</p>
+          the force of <span class="sunshine">aesthetic</span> in every project i embark on. when I'm not turning ideas into stunning visuals, you'll find
+          me lost in the rhythm of <span class="sunshine">music</span>, my source of <span>creativity</span>. art, games, and interior design are my kind of
+          <span class="sunshine">playground</span>, fueling the intrigue in my work. my imagination knows no bounds, and now, i'm excited to share it with
+          the world &#8212; one project at a time. let's create something <span class="sunshine">extraordinary</span> together!</p>
           <a class="button aboutbutton" href="./images/CV.pdf" download>interested in my resume? download it here!</a>
       </div>
     </article>
@@ -104,12 +97,12 @@
         </div>
       
         <div class="projectdetails">
-          <div>
+          <div class="moreinfo">
             <a href="./besimplified/besimplified.html" class="projectinfo linkie2">more information</a><img class="projectarrow" src="./images/arrow.svg" alt="image of arrow">
           </div>
           <div>
             <p class="projectinfo italic">2022</p>
-            <p class="projectinfo gradient">branding, website, app, visuals, styleguide</p>
+            <p class="projectinfo gradient2">branding, website, app, visuals, styleguide</p>
           </div>
         </div>
        </div>
@@ -125,12 +118,12 @@
         </div>
       
         <div class="projectdetails">
-          <div>
+          <div class="moreinfo">
             <a href="./ugc/ugc.html" class="projectinfo linkie2">more information</a><img class="projectarrow" src="./images/arrow.svg" alt="image of arrow">
           </div>
           <div>
             <p class="projectinfo italic">2022</p>
-            <p class="projectinfo gradient">app</p>
+            <p class="projectinfo gradient2">app</p>
           </div>
         </div>
        </div>
@@ -146,12 +139,12 @@
         </div>
       
         <div class="projectdetails">
-          <div>
+          <div class="moreinfo">
             <a href="./way2art/way2art.html" class="projectinfo linkie2">more information</a><img class="projectarrow" src="./images/arrow.svg" alt="image of arrow">
           </div>
           <div>
             <p class="projectinfo italic">2023</p>
-            <p class="projectinfo gradient">branding, app, visuals, styleguide</p>
+            <p class="projectinfo gradient2">branding, app, visuals, styleguide</p>
           </div>
         </div>
        </div>
@@ -168,12 +161,12 @@
         </div>
       
         <div class="projectdetails">
-          <div>
+          <div class="moreinfo">
             <a href="./virtunes/virtunes.html" class="projectinfo linkie2">more information</a><img class="projectarrow" src="./images/arrow.svg" alt="image of arrow">
           </div>
           <div>
             <p class="projectinfo italic">2023</p>
-            <p class="projectinfo gradient">branding, website, visuals, styleguide</p>
+            <p class="projectinfo gradient2">branding, website, visuals, styleguide</p>
           </div>
         </div>
        </div>
@@ -190,12 +183,12 @@
         </div>
       
         <div class="projectdetails">
-          <div>
+          <div class="moreinfo">
             <a href="./ohsyn/ohsyn.html" class="projectinfo linkie2">more information</a><img class="projectarrow" src="./images/arrow.svg" alt="image of arrow">
           </div>
           <div>
             <p class="projectinfo italic">2023</p>
-            <p class="projectinfo gradient">branding, styleguide</p>
+            <p class="projectinfo gradient2">branding, styleguide</p>
           </div>
         </div>
        </div>
@@ -246,7 +239,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script>
-          const timeline = gsap.timeline();
+      const timeline = gsap.timeline();
       timeline.to(".animate",{
           delay: 0.1,
           duration: .5,

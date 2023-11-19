@@ -60,24 +60,3 @@ sidereveal()
 
 window.addEventListener("scroll", sidereveal);
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Get references to the button and audio element
-  const playButton = document.getElementById("playButton");
-  const audioPlayer = document.getElementById("audioPlayer");
-
-  // Add a click event listener to the button
-  playButton.addEventListener("click", function () {
-    // Check if the audio is currently playing
-    if (audioPlayer.paused) {
-      // If paused, play the audio
-      audioPlayer.play();
-      // Change the button image to a pause icon or update it accordingly
-      playButton.innerHTML = '<img id="pause" src="./images/pause.svg" alt="pause button">';
-    } else {
-      // If playing, pause the audio
-      audioPlayer.pause();
-      // Change the button image to a play icon or update it accordingly
-      playButton.innerHTML = '<img id="play" src="./images/play.svg" alt="play button">';
-    }
-  });
-});

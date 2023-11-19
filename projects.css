@@ -54,8 +54,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
     padding: 5%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.moreinfo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .projecttitle{
@@ -76,7 +86,7 @@
     line-height: 20px;
 }
 
-.gradient {
+.gradient, .gradient2 {
     background: linear-gradient(to right, #F4537A, #50A4F1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -141,8 +151,8 @@
     align-items: center;
     gap: 50px;
     margin-bottom: 100px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .button {
@@ -260,4 +270,19 @@
         margin-left: 100px;
         margin-right: 100px;
     }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .gradient2 {
+        background: none; 
+        -webkit-background-clip: initial; 
+        background-clip: initial; 
+        -webkit-text-fill-color: inherit; 
+        font-weight: 300;
+      }
+
+      .project, .project2 {
+        justify-content: space-evenly;
+      }
+
   }
