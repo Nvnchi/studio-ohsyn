@@ -966,6 +966,61 @@ h2 {
 
 @media screen and (max-width: 400px) {
   #about {
-    transform: scale(0.45);
+    transform: scale(0.46);
+    text-align: center;
+  }
+
+  h2 {
+    margin-left: -35px;
+  }
+
+  .aboutbutton {
+    margin-left: 0px !important;
+  }
+
+  .text1 {
+    max-width: 500px;
+  }
+
+  @keyframes bounce2 {
+    0% {
+      transform: translateX(0);
+      transform: translateY(-15px);
+    }
+  
+    25% {
+      transform: translateX(200px);
+  
+    }
+  
+    50% {
+      transform: translateY(15px);
+    }
+  
+    100% {
+      transform: translateX(0);
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes bounce1 {
+    0% {
+      transform: translateX(0);
+      transform: translateY(25px);
+    }
+  
+    25% {
+      transform: translateX(-250px);
+  
+    }
+  
+    50% {
+      transform: translateY(-25px);
+    }
+  
+    100% {
+      transform: translateX(0);
+      transform: translateY(25px);
+    }
   }
 }
