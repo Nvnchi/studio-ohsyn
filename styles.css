@@ -22,6 +22,7 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,
@@ -58,6 +59,10 @@ body {
   background-image: url(./images/foto.png);
   overflow-x: hidden;
   cursor: none;
+}
+
+#body {
+  overflow-x: hidden;
 }
 
 a,
@@ -966,7 +971,7 @@ h2 {
 
 @media screen and (max-width: 400px) {
   #about {
-    transform: scale(0.46);
+    transform: scale(0.48);
     text-align: center;
   }
 
