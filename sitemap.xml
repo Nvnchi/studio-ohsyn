@@ -1,0 +1,34 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>https://ohsyn.com/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ohsyn.com/besimplified/besimplified.html</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ohsyn.com/ugc/ugc.html</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ohsyn.com/way2art/way2art.html</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ohsyn.com/virtunes/virtunes.html</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ohsyn.com/ohsyn/ohsyn.html</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
